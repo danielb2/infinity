@@ -8,7 +8,7 @@ begin
     gem.summary = %Q{simple lib to deal with infinate numbers}
     gem.description = %Q{simple lib to deal with infinate numbers}
     gem.email = "daniel@netwalk.org"
-    gem.homepage = "http://github.com/danielb2/infinite"
+    gem.homepage = "http://github.com/danielb2/infinity"
     gem.authors = ["Daniel Bretoi"]
     gem.files =  FileList["[a-zA-Z]*", "{bin,generators,lib,test}/**/*"]
     #gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
@@ -48,7 +48,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "infinite #{version}"
+  rdoc.title = "infinity #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
