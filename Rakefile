@@ -4,13 +4,14 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "infinity"
-    gem.summary = %Q{simple lib to deal with infinite}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.name = "infinite"
+    gem.summary = %Q{simple lib to deal with infinate numbers}
+    gem.description = %Q{simple lib to deal with infinate numbers}
     gem.email = "daniel@netwalk.org"
-    gem.homepage = "http://github.com/danielb2/infinity"
+    gem.homepage = "http://github.com/danielb2/infinite"
     gem.authors = ["Daniel Bretoi"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.files =  FileList["[a-zA-Z]*", "{bin,generators,lib,test}/**/*"]
+    #gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -47,7 +48,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "infinity #{version}"
+  rdoc.title = "infinite #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
