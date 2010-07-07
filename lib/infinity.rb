@@ -7,6 +7,8 @@ class Infinity
       self
     end
     def /(obj)
+      return 1 if obj == Infinity
+      return 1 if obj.kind_of? Infinity
       self
     end
     def *(obj)
@@ -41,6 +43,9 @@ class TC_Infinity < Test::Unit::TestCase
     assert_equal(Infinity, (Infinity - 23))
     assert_equal(Infinity, (Infinity / 23))
     assert_equal(Infinity, (Infinity * 23))
+    assert_equal(1, (Infinity / Infinity))
+    assert_equal(1, (Infinity.new / Infinity))
+    assert_equal(1, (Infinity.new / Infinity.new))
   end
 
   def test_comparable
