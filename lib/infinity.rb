@@ -1,4 +1,4 @@
-class Infinite
+class Infinity
   module Methods
     def +(obj)
       self
@@ -19,7 +19,7 @@ class Infinite
       false
     end
     def to_str
-      "Infinite"
+      "Infinity"
     end
     alias_method :to_str, :to_s
   end
@@ -35,23 +35,23 @@ __END__
 
 require 'test/unit'
 
-class TC_Infinite < Test::Unit::TestCase
+class TC_Infinity < Test::Unit::TestCase
   def test_arithmatic
-    assert_equal(Infinite, (Infinite + 23))
-    assert_equal(Infinite, (Infinite - 23))
-    assert_equal(Infinite, (Infinite / 23))
-    assert_equal(Infinite, (Infinite * 23))
+    assert_equal(Infinity, (Infinity + 23))
+    assert_equal(Infinity, (Infinity - 23))
+    assert_equal(Infinity, (Infinity / 23))
+    assert_equal(Infinity, (Infinity * 23))
   end
 
   def test_comparable
-    assert(Infinite > 23)
-    assert_equal(false, Infinite < 23)
-    assert(Infinite == Infinite)
+    assert(Infinity > 23)
+    assert_equal(false, Infinity < 23)
+    assert(Infinity == Infinity)
   end
 
   def test_string
-    assert_equal("Infinite", "#{Infinite}")
-    assert_equal("Infinite", Infinite.to_s)
+    assert_equal("Infinity", "#{Infinity}")
+    assert_equal("Infinity", Infinity.to_s)
   end
 
 end
