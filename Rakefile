@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "infinite"
+    gem.name = "infinity"
     gem.summary = %Q{simple lib to deal with infinate numbers}
     gem.description = %Q{simple lib to deal with infinate numbers}
     gem.email = "daniel@netwalk.org"
