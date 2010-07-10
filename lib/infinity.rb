@@ -4,6 +4,8 @@ class Infinity
       self
     end
     def -(obj)
+      return 0 if obj == Infinity
+      return 0 if obj.kind_of? Infinity
       self
     end
     def /(obj)
@@ -17,9 +19,13 @@ class Infinity
       self
     end
     def >(obj)
+      return false if obj == Infinity
+      return false if obj.kind_of? Infinity
       true
     end
     def <(obj)
+      return false if obj == Infinity
+      return false if obj.kind_of? Infinity
       false
     end
     def to_str

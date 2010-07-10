@@ -1,6 +1,38 @@
 = infinity
 
-Description goes here.
+Class to deal with Infinity conditions.
+Regular arithmatic:
+
+  3 * Infinity # => Infinity
+  3 + Infinity # => Infinity
+  3 / Infinity # => Infinity
+  3 - Infinity # => Infinity
+
+Infinity arithmatic:
+
+  0 * Infinity #=> 0
+  Infinity * Infinity # => Infinity
+  Infinity + Infinity # => Infinity
+  Infinity / Infinity # => 1
+  Infinity - Infinity # => 0
+
+Infinity comparisons
+
+  Infinity > 23        # => true
+  Infinity < 23        # => false
+  Infinity < Object    # => false
+  Infinity > Object    # => true
+  Infinity == Infinity # => true
+  Infinity > Infinity  # => false
+  Infinity < Infinity  # => false
+
+
+to handle division by zero without raising an error.
+
+  require 'infinity/zero'
+
+  3 / 0   # => Infinity
+  3.0 / 0 # => Infinity
 
 == Note on Patches/Pull Requests
  
