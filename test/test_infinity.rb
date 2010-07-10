@@ -27,6 +27,7 @@ class TestInfinity < Test::Unit::TestCase
   context "zero" do
     should "divide by zero" do
       assert_equal(Infinity, 9/0)
+      assert_equal(Infinity, 9.0/0)
     end
   end
 end
